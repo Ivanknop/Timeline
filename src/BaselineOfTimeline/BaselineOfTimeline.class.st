@@ -10,9 +10,11 @@ BaselineOfTimeline >> baseline: spec [
 
   <baseline>
   spec for: #common do: [
-      spec repository: 'github.com/Ivanknop/TimeLine/source'.
-
-      spec baseline: 'Chalten' with: [ spec repository: 'github://ba-st/chalten:release-candidate/source' ].
+      spec baseline: 'Chalten' with: [
+          spec
+            repository: 'github://ba-st/chalten:release-candidate/source';
+            loads: #( 'Chalten-Gregorian-Calendar' )
+        ].
 
       spec
         package: 'Timeline-Model' with: [ spec requires: #( 'Chalten' ) ];
