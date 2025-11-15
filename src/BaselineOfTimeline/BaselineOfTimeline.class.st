@@ -12,7 +12,7 @@ BaselineOfTimeline >> baseline: spec [
   spec for: #common do: [
       spec baseline: 'Chalten' with: [
           spec
-            repository: 'github://ba-st/chalten:release-candidate/source';
+            repository: 'github://ba-st/chalten:v10/source';
             loads: #( 'Chalten-Gregorian-Calendar' )
         ].
 
